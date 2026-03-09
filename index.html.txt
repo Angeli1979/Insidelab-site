@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Insidelab — Gestão de Estoque e Automação de Compras</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Insidelab: plataforma de gestão de estoque remoto e automação completa de compras para o seu negócio."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========================
+         NAVBAR
+    ======================== -->
+    <header class="hero">
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <img src="logo-insidelab.png" alt="Insidelab" class="logo-img" />
+        </a>
+        <button id="hamburger">&#9776;</button>
+        <ul class="menu" id="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#plataforma">Plataforma</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- ========================
+           HERO
+      ======================== -->
+      <div class="hero-container">
+        <span class="hero-tag">Plataforma B2B</span>
+        <h1>Estoque sob controle.<br />Compras no piloto automático.</h1>
+        <p class="descricao">
+          A Insidelab conecta sua operação de ponta a ponta — do monitoramento
+          de estoque remoto à automação inteligente de compras, tudo em tempo
+          real.
+        </p>
+        <div class="hero-ctas">
+          <a href="#contato" class="btn-primary">Quero uma demonstração</a>
+          <a href="#como-funciona" class="btn-secondary">Como funciona</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========================
+         NÚMEROS / PROVA SOCIAL
+    ======================== -->
+    <section class="numeros">
+      <div class="numeros-container">
+        <div class="numero-item">
+          <strong>+83%</strong>
+          <span>Precisão no estoque</span>
+        </div>
+        <div class="numero-item">
+          <strong>30%</strong>
+          <span>Redução de custos</span>
+        </div>
+        <div class="numero-item">
+          <strong>24/7</strong>
+          <span>Monitoramento contínuo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         SOBRE
+    ======================== -->
+    <section id="sobre">
+      <h2>O que é a Insidelab?</h2>
+      <div class="sobre-conteudo">
+        <div class="sobre-texto">
+          <p>
+            A <strong>Insidelab</strong> é uma plataforma de gestão de estoque
+            remoto e automação completa de compras. Desenvolvida para empresas
+            que precisam de controle preciso, visibilidade total e decisões de
+            reposição mais inteligentes.
+          </p>
+          <p>
+            Com tecnologia de ponta em IoT, inteligência artificial e integração
+            com ERPs e marketplaces, a Insidelab elimina rupturas, reduz
+            desperdícios e automatiza todo o ciclo de compras — do pedido à
+            entrega.
+          </p>
+          <p>
+            Não importa onde esteja o seu estoque: a Insidelab monitora, analisa
+            e age por você.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         FUNCIONALIDADES (CARDS)
+    ======================== -->
+    <section id="funcionalidades">
+      <h2>Funcionalidades</h2>
+      <p class="section-sub">
+        Tudo que sua operação precisa em uma única plataforma.
+      </p>
+      <div class="func-grid">
+        <div class="func-card">
+          <div class="func-icon">📦</div>
+          <h3>Gestão de Estoque Remoto</h3>
+          <p>
+            Monitore níveis de estoque em tempo real de qualquer lugar. Alertas
+            automáticos de ruptura e excesso.
+          </p>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon">🤖</div>
+          <h3>Automação de Compras</h3>
+          <p>
+            Pedidos gerados automaticamente com base em regras de negócio,
+            histórico de consumo e sazonalidade.
+          </p>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon">📊</div>
+          <h3>Dashboards Interativos</h3>
+          <p>
+            Visualize KPIs de estoque, compras e fornecedores em dashboards
+            personalizáveis e exportáveis.
+          </p>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon">🔗</div>
+          <h3>Integração com ERPs</h3>
+          <p>
+            Conecta-se a SAP, TOTVS, Bling, Omie e outros sistemas via API REST
+            sem necessidade de migração.
+          </p>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon">🛒</div>
+          <h3>Gestão de Fornecedores</h3>
+          <p>
+            Cadastre, avalie e negocie com fornecedores dentro da plataforma,
+            com histórico de desempenho e cotações.
+          </p>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon">🔔</div>
+          <h3>Alertas Inteligentes</h3>
+          <p>
+            Notificações via WhatsApp, e-mail e app para equipes de compras e
+            logística sobre eventos críticos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         COMO FUNCIONA (STEPS)
+    ======================== -->
+    <section id="como-funciona">
+      <h2>Como funciona</h2>
+      <p class="section-sub">Simples de implementar. Poderoso no dia a dia.</p>
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h3>Conecte seu estoque</h3>
+          <p>
+            Integre seus canais de venda, ERP ou insira os dados manualmente. A
+            Insidelab lê, organiza e centraliza tudo.
+          </p>
+        </div>
+
+        <div class="step-arrow">→</div>
+
+        <div class="step">
+          <div class="step-number">02</div>
+          <h3>Defina as regras</h3>
+          <p>
+            Configure pontos de reposição, fornecedores preferidos, limites de
+            gasto e aprovações por nível hierárquico.
+          </p>
+        </div>
+
+        <div class="step-arrow">→</div>
+
+        <div class="step">
+          <div class="step-number">03</div>
+          <h3>A plataforma age</h3>
+          <p>
+            Quando o estoque atinge o ponto crítico, a Insidelab gera o pedido
+            automaticamente e notifica os responsáveis.
+          </p>
+        </div>
+
+        <div class="step-arrow">→</div>
+
+        <div class="step">
+          <div class="step-number">04</div>
+          <h3>Você acompanha</h3>
+          <p>
+            Visualize o status de compras, entregas e estoque em tempo real pelo
+            dashboard ou pelo app mobile.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         CARROSSEL DE TELAS
+    ======================== -->
+    <section id="plataforma">
+      <h2>Conheça a plataforma</h2>
+      <p class="section-sub">
+        Veja as principais telas da Insidelab — interface simples, informação
+        poderosa.
+      </p>
+
+      <div class="carrossel-wrapper">
+        <button class="carrossel-btn" id="btn-prev">&#8592;</button>
+
+        <div class="carrossel-viewport">
+          <div class="carrossel-track" id="carrossel-track">
+            <div class="tela-card">
+              <img src="tela-login.png" alt="Tela de login da Insidelab" />
+              <p class="tela-legenda">
+                Tela de login — acesso seguro e simples à plataforma Insidelab.
+              </p>
+            </div>
+
+            <div class="tela-card">
+              <img
+                src="tela-dashboard-1.png"
+                alt="Dashboard principal de estoque"
+              />
+              <p class="tela-legenda">
+                Dashboard de Gestão de Estoque — visão geral de reagentes,
+                vencimentos e pendências. Pronto para personalizar.
+              </p>
+            </div>
+
+            <div class="tela-card">
+              <img
+                src="tela-cotacoes.png"
+                alt="Tela de cotações e comparação de fornecedores"
+              />
+              <p class="tela-legenda">
+                Cotações — comparação de fornecedores e preços em um só lugar.
+              </p>
+            </div>
+
+            <div class="tela-card">
+              <img
+                src="tela-dashboard-2.png"
+                alt="Dashboard detalhado de reagentes"
+              />
+              <p class="tela-legenda">
+                Gestão e Controle dos Reagentes — níveis de estoque, próximo
+                pedido e validade.
+              </p>
+            </div>
+
+            <div class="tela-card">
+              <img
+                src="tela-pedidos.png"
+                alt="Tela de pedidos e histórico de compras"
+              />
+              <p class="tela-legenda">
+                Histórico de pedidos — status de pagamento, aprovação e entrega
+                em tempo real.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carrossel-btn" id="btn-next">&#8594;</button>
+      </div>
+
+      <div class="carrossel-dots" id="carrossel-dots">
+        <span class="dot ativo"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- ========================
+         CONTATO
+    ======================== -->
+    <section id="contato">
+      <h2>Fale com a Insidelab</h2>
+      <p>
+        Pronto para automatizar sua operação? Entre em contato e agende uma
+        demonstração gratuita.
+      </p>
+
+      <div class="contatos-lista">
+        <div class="contato-item">
+          <strong>E-mail</strong>
+          <span>contato@insidelab.com.br</span>
+        </div>
+        <div class="contato-item">
+          <strong>WhatsApp</strong>
+          <span>(47) 99674-6979</span>
+        </div>
+        <div class="contato-item">
+          <strong>Localização</strong>
+          <span>Balneário Camboriú — SC</span>
+        </div>
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com/insidelaboficial/" target="_blank"
+            >Instagram</a
+          >
+          <a href="https://www.linkedin.com/in/ricardoangeli/" target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         FOOTER
+    ======================== -->
+    <footer class="footer">
+      <p>&#169; 2026 Insidelab. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- ========================
+         SCRIPTS
+    ======================== -->
+    <script>
+      // --- Menu hamburger ---
+      const button = document.getElementById("hamburger");
+      const menu = document.getElementById("menu");
+      button.addEventListener("click", function () {
+        menu.classList.toggle("ativa");
+      });
+
+      // --- Carrossel de telas da plataforma ---
+      const track = document.getElementById("carrossel-track");
+      const dotsEl = document.querySelectorAll(".dot");
+      const cards = document.querySelectorAll(".tela-card");
+      let atual = 0;
+
+      function irPara(index) {
+        atual = index;
+        track.style.transform = `translateX(-${atual * 100}%)`;
+        dotsEl.forEach((d) => d.classList.remove("ativo"));
+        dotsEl[atual].classList.add("ativo");
+      }
+
+      document.getElementById("btn-next").addEventListener("click", () => {
+        irPara((atual + 1) % cards.length);
+      });
+
+      document.getElementById("btn-prev").addEventListener("click", () => {
+        irPara((atual - 1 + cards.length) % cards.length);
+      });
+
+      dotsEl.forEach((dot, i) => {
+        dot.addEventListener("click", () => irPara(i));
+      });
+
+      // Avanço automático a cada 4 segundos
+      setInterval(() => {
+        irPara((atual + 1) % cards.length);
+      }, 4000);
+    </script>
+  </body>
+</html>

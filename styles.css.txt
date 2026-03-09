@@ -1,0 +1,714 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  background: #f7fafa;
+  color: #1a1a2e;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* ========================
+   NAVBAR — efeito glass
+======================== */
+.logo-img {
+  height: 40px;
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(46, 207, 176, 0.2);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+}
+
+/* hover com linha deslizante */
+.menu a {
+  position: relative;
+  color: #1a1a2e;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #2ecfb0;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover {
+  color: #2ecfb0;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* ========================
+   HERO
+======================== */
+.hero {
+  min-height: 100vh;
+  background: radial-gradient(
+      circle at top left,
+      rgba(46, 207, 176, 0.14),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(240, 43, 95, 0.08),
+      transparent 55%
+    ),
+    #ffffff;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-container {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px 60px;
+  flex: 1;
+}
+
+.hero-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #2ecfb0;
+  background: rgba(46, 207, 176, 0.1);
+  border: 1px solid rgba(46, 207, 176, 0.35);
+  border-radius: 999px;
+  padding: 6px 16px;
+  margin-bottom: 24px;
+}
+
+.hero-container h1 {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  max-width: 720px;
+}
+
+.descricao {
+  color: #6b7280;
+  max-width: 560px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 36px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #2ecfb0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 999px;
+  border: 2px solid #2ecfb0;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(46, 207, 176, 0.3);
+}
+
+.btn-primary:hover {
+  background: #25b89c;
+  border-color: #25b89c;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(46, 207, 176, 0.4);
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 28px;
+  background: transparent;
+  color: #1a1a2e;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 999px;
+  border: 2px solid rgba(26, 26, 46, 0.2);
+  transition: border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: #2ecfb0;
+  color: #2ecfb0;
+  transform: translateY(-2px);
+}
+
+/* ========================
+   NÚMEROS / PROVA SOCIAL
+======================== */
+.numeros {
+  background: #2ecfb0;
+  padding: 48px 40px;
+}
+
+.numeros-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.numero-item {
+  text-align: center;
+  min-width: 140px;
+}
+
+.numero-item strong {
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.numero-item span {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ========================
+   TÍTULOS E SUBTÍTULOS
+   DE SEÇÃO
+======================== */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.section-sub {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 8px;
+  margin-bottom: 48px;
+  font-size: 1rem;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* ========================
+   SOBRE
+======================== */
+#sobre {
+  background-color: #f7fafa;
+  padding: 80px 40px;
+}
+
+#sobre h2 {
+  color: #2ecfb0;
+}
+
+.sobre-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-width: 680px;
+  margin: 32px auto 0;
+}
+
+.sobre-texto p {
+  color: #6b7280;
+  margin-bottom: 16px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.sobre-texto strong {
+  color: #2ecfb0;
+}
+
+/* ========================
+   FUNCIONALIDADES
+======================== */
+#funcionalidades {
+  background-color: #ffffff;
+  padding: 80px 40px;
+}
+
+.func-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.func-card {
+  background: #f7fafa;
+  border: 1px solid rgba(46, 207, 176, 0.2);
+  border-radius: 16px;
+  padding: 32px 24px;
+  flex: 1 1 260px;
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: default;
+}
+
+.func-card:hover {
+  transform: translateY(-6px);
+  border-color: #2ecfb0;
+  box-shadow: 0 12px 32px rgba(46, 207, 176, 0.15);
+}
+
+.func-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.func-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.func-card p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* ========================
+   COMO FUNCIONA (STEPS)
+======================== */
+#como-funciona {
+  background-color: #f7fafa;
+  padding: 80px 40px;
+}
+
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step {
+  background: #ffffff;
+  border: 1px solid rgba(46, 207, 176, 0.2);
+  border-radius: 16px;
+  padding: 28px 24px;
+  flex: 1 1 180px;
+  max-width: 210px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: default;
+}
+
+.step:hover {
+  transform: translateY(-4px);
+  border-color: #2ecfb0;
+  box-shadow: 0 10px 28px rgba(46, 207, 176, 0.15);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #2ecfb0;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.step h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.step-arrow {
+  font-size: 1.8rem;
+  color: #2ecfb0;
+  display: flex;
+  align-items: center;
+  padding-top: 28px;
+  font-weight: 300;
+  flex-shrink: 0;
+}
+
+/* ========================
+   CARROSSEL DE TELAS
+======================== */
+#plataforma {
+  background-color: #ffffff;
+  padding: 80px 40px;
+  overflow: hidden;
+}
+
+#plataforma h2 {
+  color: #1a1a2e;
+}
+
+.carrossel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.carrossel-viewport {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.carrossel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.tela-card {
+  min-width: 100%;
+  box-sizing: border-box;
+  background: #f7fafa;
+  text-align: center;
+}
+
+.tela-card img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-radius: 16px 16px 0 0;
+}
+
+.tela-legenda {
+  padding: 16px 24px;
+  font-size: 0.9rem;
+  color: #6b7280;
+  background: #f7fafa;
+  border-top: 1px solid rgba(46, 207, 176, 0.15);
+  border-radius: 0 0 16px 16px;
+  line-height: 1.5;
+}
+
+.carrossel-btn {
+  background: #ffffff;
+  border: 1px solid rgba(46, 207, 176, 0.35);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.2rem;
+  color: #2ecfb0;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(46, 207, 176, 0.15);
+}
+
+.carrossel-btn:hover {
+  background: #2ecfb0;
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(46, 207, 176, 0.3);
+}
+
+.carrossel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(46, 207, 176, 0.25);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.dot.ativo {
+  background: #2ecfb0;
+  transform: scale(1.3);
+}
+
+/* ========================
+   CONTATO
+======================== */
+#contato {
+  min-height: 50vh;
+  text-align: center;
+  padding: 80px 40px;
+  background: #f7fafa;
+}
+
+#contato h2 {
+  color: #2ecfb0;
+  margin-bottom: 12px;
+}
+
+#contato p {
+  color: #6b7280;
+  margin-bottom: 40px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.contatos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contato-item {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(46, 207, 176, 0.25);
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.contato-item:hover {
+  border-color: #2ecfb0;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(46, 207, 176, 0.12);
+}
+
+.contato-item strong {
+  display: block;
+  color: #2ecfb0;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contato-item span {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.redes-sociais a {
+  border: 1px solid #f02b5f;
+  border-radius: 10px;
+  color: #f02b5f;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.redes-sociais a:hover {
+  background: #f02b5f;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ========================
+   FOOTER
+======================== */
+.footer {
+  text-align: center;
+  padding: 24px;
+  background: #1a1a2e;
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+/* ========================
+   HAMBURGER / MENU MOBILE
+======================== */
+#hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1a1a2e;
+}
+
+/* ========================
+   RESPONSIVO
+======================== */
+@media (max-width: 768px) {
+  #hamburger {
+    display: block;
+  }
+
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .menu {
+    position: absolute;
+    top: 68px;
+    right: 20px;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    display: none;
+    border-radius: 16px;
+    padding: 20px 24px;
+    border: 1px solid rgba(46, 207, 176, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+  }
+
+  .menu.ativa {
+    display: flex;
+  }
+
+  .hero-container h1 {
+    font-size: 2rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-arrow {
+    transform: rotate(90deg);
+    padding-top: 0;
+  }
+
+  .step {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .func-card {
+    max-width: 100%;
+  }
+
+  .carrossel-btn {
+    display: none;
+  }
+
+  .redes-sociais {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sobre,
+  #funcionalidades,
+  #como-funciona,
+  #plataforma,
+  #contato {
+    padding: 60px 20px;
+  }
+
+  .numeros {
+    padding: 40px 20px;
+  }
+
+  .numeros-container {
+    gap: 24px;
+  }
+
+  .numero-item strong {
+    font-size: 2rem;
+  }
+}
